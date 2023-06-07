@@ -225,5 +225,36 @@ public class Post implements ClassWithCRUD {
 
         return posts;
     }
+    
+    public static ArrayList<Post> listByCategory(Connection con, int cat_id) {
+        // instrucao SQL
+        PreparedStatement instrucaoSQL;
+        // resultados
+        ResultSet r;
+        ArrayList<Post> posts = new ArrayList<Post>();
+
+        try {
+            // criando a instrução SQL
+            String comando = "SELECT * FROM Post WHERE Category_id = ? ORDER BY cast(concat(substring(date,7,4),'-',substring(date,4,2),'-',substring(date,1,2)) as date) DESC";
+            instrucaoSQL = con.prepareStatement(comando);
+            instrucaoSQL.setInt(1, cat_id);
+            r = instrucaoSQL.executeQuery();
+            
+            while (r.next()) {
+                posts.add(new Post(r.getInt("id"),
+                        r.getString("title"),
+                        r.getString("description"),
+                        r.getString("date"),
+                        r.getString("content"),
+                        r.getInt("Admin_id"),
+                        r.getInt("Category_id")));
+            }
+
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Ocorreu um erro ao carregar as publicações.");
+        }
+
+        return posts;
+    }
 
 }

@@ -112,6 +112,55 @@ public class Category implements ClassWithCRUD {
 
             while (resultados.next()) {
                 cat = new Category(resultados.getInt("id"), resultados.getString("name"));
+                return cat;
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro ao buscar dados.");
+        }
+        
+        return cat;
+    }
+    
+    public static boolean alreadyExists(Connection con, String name){
+        // instrucao SQL
+        PreparedStatement instrucaoSQL;
+        // resultados
+        ResultSet resultados;
+        
+        try {
+            // criando a instrução SQL
+            String comando = "select * from Category where name=?";
+            instrucaoSQL = con.prepareStatement(comando);
+            instrucaoSQL.setString(1, name);
+            resultados = instrucaoSQL.executeQuery();
+
+            if(resultados.next()){
+                return true;
+            }
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Erro ao buscar dados.");
+        }
+        
+        return false;
+    }
+    
+    public static Category getByName(Connection con, String name){
+        // instrucao SQL
+        PreparedStatement instrucaoSQL;
+        // resultados
+        ResultSet resultados;
+        Category cat = null;
+        
+        try {
+            // criando a instrução SQL
+            String comando = "select * from Category where name=?";
+            instrucaoSQL = con.prepareStatement(comando);
+            instrucaoSQL.setString(1, name);
+            resultados = instrucaoSQL.executeQuery();
+
+            if(resultados.next()){
+                cat = new Category(resultados.getInt("id"), resultados.getString("name"));
+                return cat;
             }
         } catch (SQLException ex) {
             JOptionPane.showMessageDialog(null, "Erro ao buscar dados.");
