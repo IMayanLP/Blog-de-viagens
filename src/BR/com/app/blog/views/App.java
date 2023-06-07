@@ -152,6 +152,7 @@ public class App extends javax.swing.JFrame {
                 && (content.length() > 0 && content.length() < 500));
     }
 
+    // INICIO DO CÓDIGO AUTO GERADO, PODE IGNORAR TUDO
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -316,7 +317,6 @@ public class App extends javax.swing.JFrame {
         );
 
         categories_screen.setMinimumSize(new java.awt.Dimension(650, 450));
-        categories_screen.setPreferredSize(new java.awt.Dimension(650, 450));
         categories_screen.setResizable(false);
         categories_screen.setSize(new java.awt.Dimension(650, 450));
 
@@ -403,7 +403,6 @@ public class App extends javax.swing.JFrame {
         categories_screen.setVisible(false);
 
         add_edit_screen.setMinimumSize(new java.awt.Dimension(250, 140));
-        add_edit_screen.setPreferredSize(new java.awt.Dimension(250, 140));
         add_edit_screen.setResizable(false);
         add_edit_screen.setSize(new java.awt.Dimension(250, 140));
 
@@ -561,7 +560,6 @@ public class App extends javax.swing.JFrame {
 
         jLayeredPane1.setMaximumSize(new java.awt.Dimension(950, 440));
         jLayeredPane1.setMinimumSize(new java.awt.Dimension(950, 440));
-        jLayeredPane1.setPreferredSize(new java.awt.Dimension(950, 440));
 
         homePanel.setBorder(javax.swing.BorderFactory.createTitledBorder("Home"));
         homePanel.setMaximumSize(new java.awt.Dimension(936, 500));
@@ -662,26 +660,25 @@ public class App extends javax.swing.JFrame {
             .addGroup(contentLayout.createSequentialGroup()
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 693, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addGroup(contentLayout.createSequentialGroup()
-                            .addComponent(editPostButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                            .addComponent(deletePostButton, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addComponent(jScrollPane2)
-                        .addComponent(learnMoreButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(titlePostField)
-                        .addComponent(refreshPosts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel4)
-                        .addComponent(ratingQuantity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel17)
-                        .addComponent(categoryFilter, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(contentLayout.createSequentialGroup()
+                        .addComponent(editPostButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(deletePostButton, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane2)
+                    .addComponent(learnMoreButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(titlePostField)
+                    .addComponent(refreshPosts, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel4)
+                    .addComponent(ratingQuantity, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(jLabel17)
+                    .addComponent(categoryFilter, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addGroup(contentLayout.createSequentialGroup()
                         .addComponent(filterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(clearFilterButton, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -695,13 +692,13 @@ public class App extends javax.swing.JFrame {
                 .addComponent(refreshPosts)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel17)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 23, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(categoryFilter, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(3, 3, 3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(contentLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(filterButton)
                     .addComponent(clearFilterButton))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1055,7 +1052,9 @@ public class App extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+    // FIM DO CÓDIGO AUTO GERADO
+    
+    // COMEÇO DAS FUNÇÕES DE EVENTOS AO CLICAR EM BUTÕES
     private void exitButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_exitButtonActionPerformed
         this.section.close();
         System.exit(0);
@@ -1235,6 +1234,8 @@ public class App extends javax.swing.JFrame {
     }//GEN-LAST:event_usernameLabelMouseClicked
 
     private void editUserButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_editUserButtonActionPerformed
+        edit_name_input.setText("");
+        edit_pass_input.setText("");
         edit_screen.setVisible(true);
     }//GEN-LAST:event_editUserButtonActionPerformed
 
@@ -1288,17 +1289,20 @@ public class App extends javax.swing.JFrame {
         if (addCategoryMode) {
             if (!Category.alreadyExists(con, category_add_edit_input.getText())) {
                 Category new_cat = new Category(-1, category_add_edit_input.getText());
-                new_cat.insert(con);
+                if(new_cat.insert(con)){
+                    JOptionPane.showMessageDialog(null, "Adicionado com sucesso!");
+                }
                 category_add_edit_input.setText("");
                 fillCategoriesTable();
-                JOptionPane.showMessageDialog(null, "Adicionado com sucesso!");
             } else {
                 JOptionPane.showMessageDialog(null, "Categoria já existe!");
             }
         } else {
             if (!category_add_edit_input.getText().equals("")) {
                 selectedCategory.setName(category_add_edit_input.getText());
-                selectedCategory.update(con);
+                if(selectedCategory.update(con)){
+                    JOptionPane.showMessageDialog(null, "Editado com sucesso!");
+                }
                 fillCategoriesTable();
                 add_edit_screen.setVisible(false);
             }
